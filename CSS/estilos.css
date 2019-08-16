@@ -1,27 +1,25 @@
 body {
+	margin: 10px;
 	background-color:  #02010a;
 	font-family: 'Dancing Script', cursive;
 }
 img {
-  box-shadow: 2px #02010a;
+	box-shadow: 2px 2px #02010a;
 }
-.contenido {
-  margin: 10px;
-  padding: 10px;
-  width: 100%;
+
+.contenido{
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
-.contenido div{
-  box-sizing: border-box;
-	min-width: 150px;
-	padding: 10px;
-}
-.contenido {
-  width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
+
 .cabecera {
   display: flex;
+	flex-direction: row;
   align-items: baseline;
   background-color: #5b7989;
   color: white;
@@ -31,11 +29,60 @@ img {
   width: 70%;
 }
 .cabecera h1{
+	margin-left: 30px;
   text-shadow: 2px 2px black;
 }
 
 #menu-pricipal a{
   width: 30%;
   color: white;
+	margin-left: 20px;
+}
 
+.activa { /* IDEA: la pagina activa queda sin el subrayado */
+	text-decoration: none;
+}
+
+#central {
+	display: flex;
+	flex-direction: column;
+  align-items:center;
+  background-color: #82c3a6;
+}
+#central > img{
+	margin: 20px;
+	width: 70%;
+}
+#izquierda {
+	max-width: 40%;
+	align-items:center;
+}
+#derecha {
+	max-width: 40%;
+	align-items:center;
+}
+
+#secundaria {
+	display: flex;
+	flex-direction: row;
+	align-items:center;
+  background-color:  #d5c75f;
+}
+
+#izquierda #derecha {
+	display: flex;
+	flex-direction: column;
+}
+
+#seundaria  #izquierda{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+#secundaria  #derecha{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
 }
