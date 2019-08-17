@@ -14,6 +14,7 @@ img {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
 
@@ -53,20 +54,21 @@ img {
 	margin: 20px;
 	width: 70%;
 }
+
 #izquierda {
 	max-width: 40%;
-	align-items:center;
 }
 #derecha {
 	max-width: 40%;
-	align-items:center;
 }
 
 #secundaria {
-	display: flex;
-	flex-direction: row;
-	align-items:center;
-  background-color:  #d5c75f;
+margin: 0 auto;
+align-items:center;
+text-align: center;
+background-color: #d5c75f;
+height: 100%;
+width: 100%;
 }
 
 #izquierda #derecha {
@@ -74,15 +76,16 @@ img {
 	flex-direction: column;
 }
 
-#seundaria  #izquierda{
+#seundaria  #izquierda {
 	text-align: center;
-	padding: 10px;
-	margin: 10px;
+	float: left;
+	margin-top: 10px;
 	width: 50%;
 }
-#secundaria  #derecha{
+#secundaria  #derecha {
 	text-align: center;
-	padding: 10px;
-	margin: 10px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 60px;
 	width: 50%;
 }
