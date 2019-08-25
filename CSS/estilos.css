@@ -42,7 +42,7 @@ img {
 	text-decoration: none;
 }
 
-#central {
+#central {/* IDEA: configuracion de la imagen central */
 	display: flex;
 	flex-direction: column;
   align-items:center;
@@ -53,16 +53,23 @@ img {
 	width: 70%;
 }
 
-#izquierda {
+.izquierda {
+	display: block;
+
+	flex-direction: column;
 	margin: 20px;
-	max-width: 40%;
+
 }
-#derecha {
+.derecha {
+	display: block;
+
+	flex-direction: column;
 	margin: 20px;
-	max-width: 40%;
+
 }
 
-#secundaria {
+
+.secundaria {/* IDEA: configuracion de las imagenes secundarias */
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -71,20 +78,24 @@ img {
 	width: 100%
 }
 
-#seundaria  #izquierda {
-	align-items: center;
-	text-align: center;
-	width: 50%;
+.izquierda > img {
+	max-width: 100%;
 }
-#seundaria  #derecha {
-	align-items: center;
-	text-align: center;
-	width: 50%;
+.derecha > img {
+	max-width: 100%;
 }
-#izquierda {
+
+
+.izquierda img {
 	transition-property: transform;
 	transition-duration: 1s;
 }
-#izquierda:hover {
+.izquierda img:hover {
 	transform: rotate(10deg);
+	box-shadow: 2px;
+	color: #82c3a6;
+
+}
+#derecha {
+
 }
