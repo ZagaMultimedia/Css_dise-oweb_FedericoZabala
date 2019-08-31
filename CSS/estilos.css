@@ -135,6 +135,11 @@ img {
 	text-align: center;
 	align-items: center;
 }
+.pie #derechos {
+	width: 25%;
+	margin: 10px;
+	text-align: center;
+}
 .logos {
 	max-width: 40px;
 	box-shadow: 0px 0px;
