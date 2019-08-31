@@ -50,7 +50,7 @@ img {
 }
 #central > img{
 	margin: 20px;
-	width: 70%;
+	width: 80%;
 }
 
 .izquierda {
@@ -79,10 +79,10 @@ img {
 }
 
 .izquierda > img {
-	max-width: 100%;
+	max-width: 90%;
 }
 .derecha > img {
-	max-width: 100%;
+	max-width: 90%;
 }
 
 
@@ -92,10 +92,14 @@ img {
 }
 .izquierda img:hover {
 	transform: rotate(10deg);
-	box-shadow: 2px;
-	color: #82c3a6;
-
+	-webkit-box-shadow: 2px 2px 2px #82c3a6;
 }
-#derecha {
 
+.derecha img {
+	transition-property: transform;
+	transition-duration: 1s;
+}
+.derecha img:hover {
+	transform: translate(20px, -5px);
+	-webkit-box-shadow: 2px 2px 2px #82c3a6;
 }
