@@ -7,6 +7,10 @@ img {
 	box-shadow: 2px 2px #02010a;
 }
 
+#link {
+	color: black;
+}
+
 .contenido{
 	display: flex;
 	flex-direction: column;
@@ -104,7 +108,7 @@ img {
 	-webkit-box-shadow: 2px 2px 2px #82c3a6;
 }
 
-.pie {
+.pie {/* IDEA: pie de pagina */
 	display: flex;
 	flex-direction: row;
   align-items: baseline;
@@ -119,4 +123,19 @@ img {
 	width: 25%;
 	margin: 10px;
 	text-align: center;
+}
+.pie #terminos {
+	width: 25%;
+	margin: 10px;
+	text-align: center;
+}
+.pie #redes {
+	width: 25%;
+	margin: 10px;
+	text-align: center;
+	align-items: center;
+}
+.logos {
+	max-width: 40px;
+	box-shadow: 0px 0px;
 }
