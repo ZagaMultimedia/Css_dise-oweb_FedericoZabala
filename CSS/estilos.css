@@ -103,3 +103,20 @@ img {
 	transform: translate(20px, -5px);
 	-webkit-box-shadow: 2px 2px 2px #82c3a6;
 }
+
+.pie {
+	display: flex;
+	flex-direction: row;
+  align-items: baseline;
+  background-color:  #C6d5c5;
+  color: black;
+  border-radius: 0 0 10px 10px;
+}
+#titulo {
+	font-size: 2em;
+}
+.pie #contacto {
+	width: 25%;
+	margin: 10px;
+	text-align: center;
+}
