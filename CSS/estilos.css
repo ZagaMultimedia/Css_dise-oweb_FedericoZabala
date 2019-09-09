@@ -9,6 +9,7 @@ img {
 
 #link {
 	color: black;
+	text-decoration: none;
 }
 
 .contenido{
@@ -72,7 +73,6 @@ img {
 
 }
 
-
 .secundaria {/* IDEA: configuracion de las imagenes secundarias */
 	display: flex;
 	flex-direction: row;
@@ -88,7 +88,6 @@ img {
 .derecha > img {
 	max-width: 90%;
 }
-
 
 .izquierda img {
 	transition-property: transform;
@@ -141,6 +140,30 @@ img {
 	text-align: center;
 }
 .logos {
-	max-width: 40px;
+	max-width: 18px;
 	box-shadow: 0px 0px;
+}
+/* IDEA: configuracion de paisajes */
+
+.arriba {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #d5c75f;
+	width: 100%;
+}
+.abajo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #d5c75f;
+	width: 100%;
+}
+.arriba > img {
+	width: 31%;
+	margin: 10px;
+}
+.abajo > img {
+	width: 31%;
+	margin: 10px;
 }
